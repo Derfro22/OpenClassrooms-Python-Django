@@ -1,4 +1,4 @@
-# Mon Projet Django - Suivi d'Apprentissage
+# 🌐Mon Projet Django - Suivi d'Apprentissage
 
 Bienvenue sur mon projet Django, où je partage mon parcours d'apprentissage en suivant les cours sur OpenClassrooms. Je mets à jour régulièrement ce projet pour refléter mes progrès dans l'apprentissage du développement web avec Python et Django.
 
