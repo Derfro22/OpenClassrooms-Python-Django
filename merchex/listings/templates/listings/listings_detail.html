@@ -7,7 +7,7 @@
 {% if listing %}
     <ul>
         <li>Description : {{ listing.description }}</li>
-        <li>État : {{ listing.sold|yesno:"A vendre,Vendu" }}</li>
+        <li>État : {{ listing.sold|yesno:"Vendu, A vendre" }}</li>
     </ul>
 
     <a href="{% url 'listing-list' %}">Retour à tous les articles</a>
