@@ -17,10 +17,16 @@ def band_detail(request, band_id):
     'listings/band_detail.html',
     {'band': band}) 
 
-def listings(request):
+def listings_list(request):
     listing = Listing.objects.all()
     return render(request,
-    'listings/listings.html',
+    'listings/listings_list.html',
+    {'listing': listing})
+
+def listings_detail(request, listing_id):
+    listing = Listing.objects.get(id=listing_id)
+    return render(request,
+    'listings/listing_detail.html',
     {'listing': listing})
 
 def about(request):

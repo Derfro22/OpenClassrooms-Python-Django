@@ -4,6 +4,11 @@
     <head><title>Merchex</title></head>
     <link rel="stylesheet" href="{% static 'listings/style.css' %}" />
     <body>
-        {% block content %}{% endblock %} 
+        <nav>
+            <a href="{% url 'band-list' %}">Groupes</a>
+            <a href="{% url 'listing-list' %}">Articles</a>
+          </nav>
+       
+          {% block content %}{% endblock %}
     </body>
 </html>
