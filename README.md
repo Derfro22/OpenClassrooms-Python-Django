@@ -10,7 +10,7 @@ Bienvenue sur mon projet Django, où je partage mon parcours d'apprentissage en 
 - [x] **Mettez en place votre environnement Python :** 100%
   - Mon environnement Python est entièrement configuré et prêt à être utilisé.
 
-- [ ] **Débutez avec le framework Django :** 59%
+- [ ] **Débutez avec le framework Django :** 71%
   - J'ai complété 59% du cours "Débutez avec le framework Django" sur OpenClassrooms.
 
 ## Progression dans Django
