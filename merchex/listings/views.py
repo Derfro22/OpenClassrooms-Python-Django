@@ -48,6 +48,7 @@ def band_edit(request, band_id):
     {'form': form})
 
 def band_delete(request, band_id):
+
     band = Band.objects.get(id=band_id)
     if request.method == 'POST':
         band.delete()
@@ -55,6 +56,7 @@ def band_delete(request, band_id):
     return render(request,
     'listings/band_delete.html',
     {'band': band})
+
 def listings_list(request):
     listings = Listing.objects.all()
     return render(request,
@@ -102,11 +104,9 @@ def listings_delete(request, listing_id):
     'listings/listings_delete.html',
     {'listing': listing})    
 
-
 def about(request):
     return render(request,
     'listings/about.html')
-
 
 def contact(request):  
 
