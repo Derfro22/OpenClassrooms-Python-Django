@@ -5,12 +5,13 @@
 <h2>{{ listing.title }}</h2>
 
 {% if listing %}
-    <ul>
-        <li>Description : {{ listing.description }}</li>
-        <li>État : {{ listing.sold|yesno:"Vendu, A vendre" }}</li>
-    </ul>
-
-    <a href="{% url 'listing-list' %}">Retour à tous les articles</a>
+<ul>
+    <li>Description : {{ listing.description }}</li>
+    <li>État : {{ listing.sold|yesno:"Vendu, A vendre" }}</li>
+</ul>
+<a href="{% url 'listing-edit' listing_id=listing.id %}">Modifier l'article</a>
+<a href="{% url 'listing-delete' listing_id=listing.id %}">Supprimer l'article</a>
+<a href="{% url 'listing-list' %}">Retour à tous les articles</a>
 {% else %}
     <p>Le listing n'existe pas.</p>
 {% endif %}

@@ -14,6 +14,9 @@
 </ul>
 
 <p>{{ band.biography }}</p>
+<a href="{% url 'band-edit' band_id=band.id %}">Modifier le groupe</a>
+<a href="{% url 'band-delete' band_id=band.id %}">Supprimer le groupe</a>
 <a href="{% url 'band-list' %}">Retour à tous les groupes</a>
+
 
 {% endblock %}
