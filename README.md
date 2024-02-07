@@ -13,7 +13,7 @@ Bienvenue sur mon projet Django, où je partage mon parcours d'apprentissage en 
 - [x] **Débutez avec le framework Django :** 100%
   - J'ai complété 100% du cours "Débutez avec le framework Django" sur OpenClassrooms.
      
-- [] **Allez plus loin avec le framework Django :** 0%
+- [ ] **Allez plus loin avec le framework Django :** 0%
   - J'ai complété 0% du cours "Allez plus loin avec le framework Django" sur OpenClassrooms.
      
 
