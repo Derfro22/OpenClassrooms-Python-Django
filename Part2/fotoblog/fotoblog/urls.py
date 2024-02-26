@@ -31,6 +31,7 @@ urlpatterns = [
     path('blog/create', blog.views.blog_and_photo_upload, name='blog_create'),
     path('blog/<int:blog_id>', blog.views.view_blog, name='view_blog'),
     path('blog/<int:blog_id>/edit', blog.views.edit_blog, name='edit_blog'),
+    path('photo/upload-multiple/', blog.views.create_multiple_photos, name='create_multiple_photos'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
